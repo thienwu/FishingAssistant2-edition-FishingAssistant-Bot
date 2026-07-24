@@ -40,15 +40,26 @@ Bản mod này giữ lại các tính năng hỗ trợ câu cá từ Fishing Ass
 
 ---
 
-## ⚙️ Hướng dẫn cài đặt & sử dụng
+## ⚙️ Hướng dẫn biên dịch & sử dụng (Dành cho Mã nguồn)
 
-1. **Cài đặt** mod thông qua SMAPI. Khuyến khích sử dụng thêm mod [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098) để dễ dàng thay đổi cài đặt trong game.
-2. **Vào game** và thức dậy trong nhà (FarmHouse hoặc Cabin).
-3. **Ghi hình tuyến đường (Làm 1 lần):**
-   - Đứng cạnh giường ngủ, bấm `F9` để bắt đầu.
-   - Đi đến mép nước tại điểm câu cá, bấm `F9` để lưu lại.
-4. **Bắt đầu câu cá:** Bấm phím `F5` để bật chế độ tự động.
-5. **Tự động đi ngủ:** Trong menu cài đặt của GMCM, hãy chọn dòng `AutoPauseFishing` là `WarnAndPause`. Khi đến giờ, nhân vật sẽ tự động ngừng câu và chạy về nhà ngủ.
+Vì kho lưu trữ này chứa **mã nguồn (source code)** chưa được biên dịch sẵn, bạn cần tự build mod trước khi đưa vào game.
+
+### 1. Biên dịch (Build) Mod từ mã nguồn
+- Đảm bảo bạn đã cài đặt [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+- Mở cửa sổ dòng lệnh (Terminal/Command Prompt) tại thư mục chứa mã nguồn này.
+- Chạy lệnh sau để biên dịch:
+  ```bash
+  dotnet build
+  ```
+- Sau khi build thành công, trình biên dịch sẽ tự động copy mod vào thư mục `Mods` của Stardew Valley nếu bạn đã cài đặt SMAPI chuẩn. Khuyến khích cài thêm mod [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098) để dễ dàng cấu hình.
+
+### 2. Hướng dẫn sử dụng trong game
+- **Vào game** và thức dậy trong nhà (FarmHouse hoặc Cabin).
+- **Ghi hình tuyến đường (Làm 1 lần):**
+  - Đứng cạnh giường ngủ, bấm `F9` để bắt đầu.
+  - Đi bộ đến mép nước tại điểm câu cá, bấm `F9` để lưu lại.
+- **Bắt đầu câu cá:** Bấm phím `F5` để bật chế độ tự động.
+- **Tự động đi ngủ:** Trong menu cài đặt của GMCM, hãy chọn dòng `AutoPauseFishing` là `WarnAndPause`. Khi đến giờ, nhân vật sẽ tự động ngừng câu và chạy về nhà ngủ.
 
 ### 🎮 Phím tắt mặc định
 - `F5`: Bật/Tắt chế độ câu cá tự động.
