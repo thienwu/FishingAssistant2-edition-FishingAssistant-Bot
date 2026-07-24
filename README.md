@@ -1,45 +1,45 @@
-# 🎣 Fishing Assistant 2 - Ultimate Bot Edition
+# 🎣 Fishing Assistant Bot 
 
 ![FishingAssistant2](Image/FishingAssistant2.gif)
 
-Welcome to the **Ultimate Bot Edition** of Fishing Assistant 2! This mod transforms the original Fishing Assistant into a **fully autonomous, intelligent AI Bot** for `Stardew Valley`. 
+A friendly and smart fishing companion for `Stardew Valley`! Based on the original Fishing Assistant 2, this modified version brings a helpful **Auto-Navigation Bot** to your farm. 
 
-Not only does it automate the entire fishing process (casting, hooking, playing the minigame, looting), but it now features an **Advanced A* Pathfinding Navigation System**. The bot can physically walk to fishing spots, fish all day, and intelligently navigate its way back to your bed before you pass out at night!
+Not only does it help you catch fish automatically, but it can also walk to the fishing spot for you, fish all day, and safely find its way back to your bed before you pass out at night!
 
 ---
 
-## ✨ What's New in the Bot Edition?
+## 🌟 What's New?
 
-### 🤖 True Autonomous Automation
-The bot now has spatial awareness and pathfinding capabilities. It can navigate around obstacles, trees, buildings, and NPCs. It seamlessly handles multi-map transitions (e.g., from your FarmHouse -> Farm -> Town -> Beach).
+### 🤖 Smart Navigation
+The bot has spatial awareness and can navigate around trees, buildings, and NPCs. It easily travels across multiple maps (e.g., from your FarmHouse to the Beach).
 
 ### 🗺️ Route Recording System
-You can teach the bot how to get to your favorite fishing spots!
+You can easily teach the bot how to get to your favorite fishing spots!
 - Stand next to your bed and press `F9` to start recording.
 - Walk to your desired fishing spot.
 - Press `F9` again at the water's edge to save the route as `AutoFishing`.
 
-### 🛏️ Smart Auto-Sleep & Next Day Resume
-Forget about passing out at 2:00 AM!
+### 🛏️ Auto-Sleep & Next Day Resume
+No more passing out at 2:00 AM!
 - When the game reaches your configured "Pause Time" (e.g., 1:00 AM), the bot will automatically pack up its fishing rod.
-- It will **reverse** the recorded route, intelligently navigating back home, opening doors, and getting straight into bed.
-- **The best part:** The next morning, the bot will automatically wake up and run straight back to the fishing spot to continue its work!
+- It will safely walk back home following your route, open the door, and get straight into bed.
+- **Bonus:** The next morning, it will automatically wake up and run back to the fishing spot to continue its work!
 
-### 🛠️ In-Game Visual Grid Editor
-Press `F10` to open the NavTool menu. You can toggle the visual grid to see exactly how the bot perceives the world (walkable tiles vs. blocked obstacles).
+### 🛠️ Visual Grid Editor
+Press `F10` to open the NavTool menu. You can toggle the visual grid to see exactly how the bot perceives walkable tiles and blocked obstacles.
 
 ---
 
 ## 🐟 Core Fishing Features
 
-This mod retains and improves all the powerful fishing features from the original Fishing Assistant 2:
+All the great features from the original Fishing Assistant 2 are still here:
 
-- **100% Hands-Free Fishing:** Auto-cast, auto-hook, and auto-play the fishing minigame perfectly.
-- **Smart Inventory Management:** Automatically loots treasures. If your inventory is full, it can drop, discard, or auto-trash junk items (based on price or a custom ignore list).
+- **Hands-Free Fishing:** Auto-cast, auto-hook, and auto-play the fishing minigame.
+- **Smart Inventory:** Automatically loots treasures. If your inventory is full, it can drop, discard, or auto-trash junk items.
 - **Auto-Eat:** Automatically detects low energy and eats food to keep you going.
-- **Bait & Tackle Management:** Automatically attaches your preferred bait and tackles. It can even spawn them for you if you run out!
-- **X-Ray Fish Preview:** Displays a UI preview of the fish or treasure currently on the hook before you even catch it.
-- **Cheats & Customization:** Instantly bite, skip minigames, force max-size fish, modify fishing difficulty, or give yourself infinite bait and tackles.
+- **Bait & Tackle Management:** Automatically attaches your preferred bait and tackles.
+- **Fish Preview:** Displays a UI preview of the fish or treasure currently on the hook before you even catch it.
+- **Customization:** Instantly bite, skip minigames, force max-size fish, modify fishing difficulty, or use infinite bait and tackles.
 
 ---
 
@@ -114,4 +114,4 @@ You can edit these settings via the `config.json` file or in-game using GMCM.
 ---
 
 ## 🙏 Credits
-Special thanks to the original creators of Fishing Assistant 2 and the Stardew Valley modding community. This Bot Edition takes their amazing foundation and elevates it to full autonomy!
+Special thanks to the original creators of Fishing Assistant 2 and the Stardew Valley modding community. This modified version builds upon their amazing work to add friendly auto-navigation features!
