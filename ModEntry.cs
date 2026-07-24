@@ -137,7 +137,7 @@ namespace ChibiKyu.StardewMods.FishingAssistant2
             LoadGridData();
 
             // if (!Context.IsMainPlayer) 
-            //     this.Helper.Multiplayer.SendMessage(message: this.SecretKey, messageType: "FishingAssistantAuth", modIDs: new[] { "FunnySnek.AntiCheatServer" }, playerIDs: new[] { Game1.MasterPlayer.UniqueMultiplayerID });
+                // this.Helper.Multiplayer.SendMessage(message: this.SecretKey, messageType: "FishingAssistantAuth", modIDs: new[] { "FunnySnek.AntiCheatServer" }, playerIDs: new[] { Game1.MasterPlayer.UniqueMultiplayerID });
         }
 
         private void OnSaving(object? sender, SavingEventArgs e) { SaveAllGridData(); }
