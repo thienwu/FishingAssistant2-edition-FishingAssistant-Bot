@@ -44,10 +44,14 @@ Bản mod này giữ lại các tính năng hỗ trợ câu cá từ Fishing Ass
 
 Vì kho lưu trữ này chứa **mã nguồn (source code)** chưa được biên dịch sẵn, bạn cần tự build mod trước khi đưa vào game.
 
-### 1. Biên dịch (Build) Mod từ mã nguồn
-- Đảm bảo bạn đã cài đặt [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
-- Mở cửa sổ dòng lệnh (Terminal/Command Prompt) tại thư mục chứa mã nguồn này.
-- Chạy lệnh sau để biên dịch:
+### 1. Tải và Biên dịch (Build) Mod từ mã nguồn
+- Đảm bảo bạn đã cài đặt [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) và [Git](https://git-scm.com/downloads).
+- Mở cửa sổ dòng lệnh (Terminal/Command Prompt) và chạy lần lượt các lệnh sau để tải mã nguồn về và di chuyển vào thư mục dự án:
+  ```bash
+  git clone https://github.com/thienwu/FishingAssistant2-edition-FishingAssistant-Bot.git
+  cd FishingAssistant2-edition-FishingAssistant-Bot
+  ```
+- Chạy lệnh sau để tiến hành biên dịch:
   ```bash
   dotnet build
   ```
