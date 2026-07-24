@@ -2,7 +2,7 @@
 
 ![FishingAssistant2](Image/FishingAssistant2.gif)
 
-Một bản mod hỗ trợ câu cá dành cho `Stardew Valley`, được phát triển dựa trên mod Fishing Assistant 2 gốc. Bản mod này được bổ sung thêm tính năng di chuyển tự động (Auto-Navigation), giúp nhân vật tự động đi đến điểm câu cá và tự quay về nhà khi đến giờ ngủ.
+Một bản mod hỗ trợ câu cá dành cho `Stardew Valley`, được phát triển dựa trên mã nguồn của mod Fishing Assistant 2. Bản mod này được tối giản hóa, **loại bỏ hoàn toàn các tính năng gian lận (cheat)** của bản gốc, đồng thời bổ sung thêm tính năng di chuyển tự động (Auto-Navigation), giúp nhân vật tự động đi đến điểm câu cá và tự quay về nhà khi đến giờ ngủ.
 
 ---
 
@@ -27,16 +27,14 @@ Bạn có thể bấm phím `F10` để mở menu NavTool. Chức năng này hi�
 
 ---
 
-## 🐟 Các tính năng câu cá (Từ bản mod gốc)
+## 🐟 Các tính năng câu cá tự động
 
-Bản mod này giữ lại các tính năng hỗ trợ câu cá từ Fishing Assistant 2:
+Bản mod này chỉ giữ lại các tính năng tự động hóa cơ bản và hợp lý nhất, **không có tính năng cheat**:
 
-- **Tự động câu cá:** Hỗ trợ tự động quăng cần, giật cá và hoàn thành minigame câu cá.
-- **Quản lý đồ đạc:** Tự động nhận rương kho báu. Cho phép tùy chọn vứt bỏ hoặc xóa bớt các vật phẩm rẻ tiền khi túi đồ bị đầy.
-- **Tự động ăn:** Cho phép nhân vật tự động ăn thức ăn khi thể lực xuống thấp.
-- **Gắn mồi & phao:** Hỗ trợ tự động gắn loại mồi và phao câu bạn đã chọn.
-- **Xem trước cá:** Hiển thị thông tin về loại cá hoặc kho báu sắp câu được trên màn hình.
-- **Tùy chỉnh độ khó:** Cung cấp các thiết lập để bỏ qua minigame, cá cắn câu ngay lập tức, hoặc vô hạn mồi/phao câu.
+- **Tự động câu cá:** Tự động quăng cần, giật cá và hoàn thành minigame câu cá như một người chơi bình thường.
+- **Quản lý đồ đạc:** Tự động nhận đồ từ rương kho báu. Cho phép tùy chọn vứt bỏ hoặc xóa bớt các vật phẩm rẻ tiền khi túi đồ bị đầy.
+- **Tự động ăn:** Tự động ăn thức ăn bạn mang theo khi thể lực xuống thấp.
+- **Gắn mồi & phao:** Tự động gắn loại mồi và phao câu bạn đã cài đặt sẵn (nếu bạn có trong túi đồ).
 
 ---
 
@@ -75,7 +73,7 @@ Vì kho lưu trữ này chứa **mã nguồn (source code)** chưa được biê
 
 ## 📜 Chi tiết các thông số cài đặt (Config)
 
-Bạn có thể thay đổi các tùy chọn này trong file `config.json` hoặc thông qua menu của GMCM.
+Bạn có thể thay đổi các tùy chọn này trong file `config.json` hoặc thông qua menu của GMCM. (Lưu ý: Tất cả các cài đặt cheat đều đã bị loại bỏ khỏi phiên bản này).
 
 ### Chung & Tự động
 * `EnableAutomationButton` / `CatchTreasureButton` / `OpenConfigMenuButton`: Đổi các phím tắt.
@@ -99,29 +97,15 @@ Bạn có thể thay đổi các tùy chọn này trong file `config.json` hoặ
 * `AllowEatingFish`: Cho phép ăn cá sống nếu không có thức ăn nào khác.
 
 ### Mồi, Phao & Cần câu
-* `AutoAttachBait` / `AutoAttachTackles`: Tự động nạp mồi và phao.
-* `PreferBait` / `PreferTackle` / `PreferAdvIridiumTackle`: Chọn loại mồi/phao ưu tiên sử dụng.
-* `SpawnBaitIfDontHave` / `SpawnTackleIfDontHave`: Tự động tạo thêm mồi/phao nếu bị hết.
-* `InfiniteBait` / `InfiniteTackle`: Dùng mồi và phao không bị hao hụt.
-* `StartWithFishingRod`: Tặng một cây cần câu tuỳ chọn vào Ngày 1.
-
-### Tuỳ chọn độ khó
-* `SkipFishingMiniGame`: Bỏ qua minigame khi câu.
-* `InstantFishBite`: Cá cắn câu ngay khi phao chạm nước.
-* `PreferFishAmount` / `PreferFishQuality`: Ưu tiên bắt nhiều cá cùng lúc hoặc cá chất lượng cao.
-* `AlwaysPerfect` / `AlwaysMaxFishSize`: Luôn bắt được cá đạt mức "Perfect" và có kích thước lớn nhất.
-* `FishDifficultyMultiplier` / `FishDifficultyAdditive`: Các thông số để điều chỉnh độ khó của cá.
-* `InstantCatchTreasure` / `TreasureChance` / `GoldenTreasureChance`: Các tuỳ chọn về rương kho báu.
-
-### Hiển thị
-* `DisplayFishPreview` / `ShowFishName` / `ShowTreasure`: Bật/tắt các khung xem trước thông tin cá.
-* `ShowUncaughtFishSpecies`: Cho phép hiển thị tên cả những loài cá bạn chưa từng câu.
-* `AlwaysShowLegendaryFish`: Luôn ưu tiên hiển thị nếu cá cắn câu là Cá Huyền Thoại.
-
-### Phù phép (Enchantment)
-* `AddAutoHookEnchantment` / `AddEfficientEnchantment` / `AddMasterEnchantment` / `AddPreservingEnchantment`: Tự động thêm các phù phép này vào cần câu của bạn.
+* `AutoAttachBait` / `AutoAttachTackles`: Tự động nạp mồi và phao từ túi đồ của bạn.
+* `PreferredBait` / `PreferredTackle` / `PreferredAdvIridiumTackle`: Chọn loại mồi/phao ưu tiên sử dụng.
+* `StartWithFishingRod`: Tặng một cây cần câu tuỳ chọn vào Ngày 1 (chỉ áp dụng nếu khởi tạo nhân vật mới).
 
 ---
 
 ## 🙏 Lời cảm ơn
-Xin cảm ơn tác giả gốc của Fishing Assistant 2 và cộng đồng mod Stardew Valley. Phiên bản này được xây dựng trên mã nguồn gốc để bổ sung thêm tính năng di chuyển tự động cho người chơi.
+Xin chân thành cảm ơn tác giả gốc của Fishing Assistant 2 và cộng đồng mod Stardew Valley đã tạo ra một nền tảng tuyệt vời. 
+
+Cần lưu ý rằng mã nguồn của mod Fishing Assistant 2 gốc chứa rất nhiều tính năng mang tính chất gian lận (cheat) như: hack mồi và phao vô hạn, cá cắn câu ngay lập tức, bỏ qua minigame luôn câu được cá lớn nhất, tự động nhận phù phép vũ khí, hiển thị trước loại cá... Để đảm bảo một trải nghiệm công bằng và tự động hóa thuần túy, **tất cả những tính năng cheat này đã được loại bỏ hoàn toàn trong dự án này**. 
+
+Phiên bản này được xây dựng lại dựa trên mã nguồn gốc với mục đích duy nhất: giữ lại sự tự động hoá cơ bản và tích hợp thêm khả năng di chuyển (Navigation/Bot) thông minh cho nhân vật.
