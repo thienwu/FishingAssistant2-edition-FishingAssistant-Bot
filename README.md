@@ -13,20 +13,11 @@ Not only does it help you catch fish automatically, but it can also walk to the 
 ### 🤖 Smart Navigation
 The bot has spatial awareness and can navigate around trees, buildings, and NPCs. It easily travels across multiple maps (e.g., from your FarmHouse to the Beach).
 
-### 🗺️ Route Recording System
-You can easily teach the bot how to get to your favorite fishing spots!
-- Stand next to your bed and press `F9` to start recording.
-- Walk to your desired fishing spot.
-- Press `F9` again at the water's edge to save the route as `AutoFishing`.
-
 ### 🛏️ Auto-Sleep & Next Day Resume
 No more passing out at 2:00 AM!
 - When the game reaches your configured "Pause Time" (e.g., 1:00 AM), the bot will automatically pack up its fishing rod.
 - It will safely walk back home following your route, open the door, and get straight into bed.
 - **Bonus:** The next morning, it will automatically wake up and run back to the fishing spot to continue its work!
-
-### 🛠️ Visual Grid Editor
-Press `F10` to open the NavTool menu. You can toggle the visual grid to see exactly how the bot perceives walkable tiles and blocked obstacles.
 
 ---
 
@@ -47,19 +38,12 @@ All the great features from the original Fishing Assistant 2 are still here:
 
 1. **Install** the mod via SMAPI. We highly recommend installing [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098) for easy in-game configuration.
 2. **Start the Game** and wake up in your FarmHouse or Cabin.
-3. **Record a Route:**
-   - Stand right next to your bed.
-   - Press `F9` to start recording.
-   - Walk normally to your fishing spot (e.g., the Beach).
-   - Once at the water, press `F9` to stop recording.
-4. **Start Fishing:** Press `F5` to toggle automation. The bot will now handle everything!
-5. **Auto-Sleep:** Make sure `AutoPauseFishing` is set to `WarnAndPause` in the config. When the time hits the limit, the bot will run home and sleep.
+3. **Start Fishing:** Press `F5` to toggle automation. The bot will now handle everything!
+4. **Auto-Sleep:** Make sure `AutoPauseFishing` is set to `WarnAndPause` in the config. When the time hits the limit, the bot will run home and sleep.
 
 ### 🎮 Default Key Bindings
 - `F5`: Toggle Fishing Automation (Start/Stop the bot)
 - `F6`: Toggle Catch/Ignore Treasure
-- `F9`: Toggle Route Recording (Start/Stop)
-- `F10`: Open the Navigation Settings Menu (View Grid, Edit Routes)
 
 ---
 

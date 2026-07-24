@@ -225,15 +225,15 @@ namespace ChibiKyu.StardewMods.FishingAssistant2
             if (e.Button == Config.CatchTreasureButton) { CatchTreasure = !CatchTreasure;
                 Game1.playSound("dwop"); }
             if (e.Button == Config.OpenConfigMenuButton && Config.OpenConfigMenuButton != SButton.None) ConfigMenu.OpenModMenu();
-            if (e.Button == openRouteMenuKey && !isRecordingRoute) Game1.activeClickableMenu = new RouteDashboardMenu(this, false);
-            if (e.Button == toggleRouteRecordKey)
-            {
-                if (!isRecordingRoute) { isRecordingRoute = true;
-                    recordingWaypoints.Clear(); recordingWaypoints.Add(new Waypoint(Game1.currentLocation.Name, new Point((int)Game1.player.Tile.X, (int)Game1.player.Tile.Y))); Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("navtool.msg.recording"), 2)); }
-                else { isRecordingRoute = false;
-                    Point targetTile = new Point((int)Game1.player.Tile.X, (int)Game1.player.Tile.Y); if (recordingWaypoints.Count > 0) recordingWaypoints[recordingWaypoints.Count - 1].SpecificTile = targetTile; Game1.activeClickableMenu = new RouteDashboardMenu(this, true);
-                }
-            }
+            // if (e.Button == openRouteMenuKey && !isRecordingRoute) Game1.activeClickableMenu = new RouteDashboardMenu(this, false);
+            // if (e.Button == toggleRouteRecordKey)
+            // {
+            //     if (!isRecordingRoute) { isRecordingRoute = true;
+            //         recordingWaypoints.Clear(); recordingWaypoints.Add(new Waypoint(Game1.currentLocation.Name, new Point((int)Game1.player.Tile.X, (int)Game1.player.Tile.Y))); Game1.addHUDMessage(new HUDMessage(Helper.Translation.Get("navtool.msg.recording"), 2)); }
+            //     else { isRecordingRoute = false;
+            //         Point targetTile = new Point((int)Game1.player.Tile.X, (int)Game1.player.Tile.Y); if (recordingWaypoints.Count > 0) recordingWaypoints[recordingWaypoints.Count - 1].SpecificTile = targetTile; Game1.activeClickableMenu = new RouteDashboardMenu(this, true);
+            //     }
+            // }
 
             if (e.Button == SButton.MouseLeft && IsGridEditMode && isGridVisible && Game1.activeClickableMenu == null)
             {
