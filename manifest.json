@@ -1,0 +1,9 @@
+{
+  "Name": "Fishing Assistant Lite",
+  "Author": "ChibiKyu (Modified)",
+  "Version": "2.5.2",
+  "Description": "A balanced, quality-of-life fishing assistant without cheat features.",
+  "UniqueID": "Custom.FishingAssistantLite",
+  "EntryDll": "FishingAssistant2.dll",
+  "MinimumApiVersion": "4.0.0"
+}
